@@ -1,11 +1,13 @@
 import os
 import requests
 import pandas as pd
+import getpass
 
-# Get API token from environment variable
-API_TOKEN = os.getenv('PAGERDUTY_API_TOKEN')
+# Prompt for API token at runtime (input is hidden)
+API_TOKEN = getpass.getpass('Enter your PagerDuty API token: ')
+
 if not API_TOKEN:
-    raise ValueError("Please set the PAGERDUTY_API_TOKEN environment variable.")
+    raise ValueError("API token is required to run this script.")
 
 HEADERS = {
     'Authorization': f'Token token={API_TOKEN}',
