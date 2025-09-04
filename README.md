@@ -14,20 +14,22 @@ This script exports all PagerDuty users, their contact methods, and notification
 Open a terminal and run:pip install requests pandas
 
 
-~~### 3. Set Your PagerDuty API Key
+~~### 3. Set Your PagerDuty API Key~~
 
-Set your PagerDuty API key as an environment variable. In your terminal, run:
+~~Set your PagerDuty API key as an environment variable. In your terminal, run:~~
 
-export PAGERDUTY_API_TOKEN=your_api_key_here~~
+~~export PAGERDUTY_API_TOKEN=your_api_key_here~~
 
 
-Replace `your_api_key_here` with your actual PagerDuty API key.
+~~Replace `your_api_key_here` with your actual PagerDuty API key.~~
 
 ### 4. Run the Script
 
 In your terminal, run:
 
 python pagerduty_export.py
+
+Add your API key when prompted
 
 
 ### 5. Find Your CSV
